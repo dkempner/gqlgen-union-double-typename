@@ -1,0 +1,11 @@
+query {
+  union {
+    __typename
+    ... on A {
+      __typename
+    }
+    ... on B {
+      __typename
+    }
+  }
+}

@@ -1,0 +1,17 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type A {
+  id: ID!
+}
+
+type B {
+  id: ID!
+}
+
+union Union = A | B
+
+type Query {
+  union: [Union!]!
+}
